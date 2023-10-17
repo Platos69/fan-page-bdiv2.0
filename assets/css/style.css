@@ -127,3 +127,40 @@
 #friends {
     max-width: 60px;
 }
+
+.container .content-nav {
+    margin-top: 100px;
+    width: 50%;
+}
+
+.container .content-nav h3 {
+    font-size: 25px;
+}
+
+.container .content-nav ol { 
+    counter-reset: item 
+}
+
+.container .content-nav li {
+     display: block 
+}
+
+.container .content-nav li:before {
+     content: counters(item, ".") " "; counter-increment: item 
+}
+
+.content-nav .list-content .list-nav {
+    margin-left: 10px;
+}
+
+.content-nav .list-content li {
+    margin-bottom: 10px;
+}
+
+.content-nav .list-content .li-1 {
+    margin-top: 10px;
+}
+
+.list-content .list-nav {
+    margin-top: 10px;
+}
